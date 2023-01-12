@@ -1,4 +1,4 @@
- function calculater() {
+  function calculater() {
   var inicial = document.getElementById("date2");
   var date2 = parseInt(document.getElementById("date2"));
  
@@ -7,7 +7,15 @@
 
   
   submit.addEventListener("click", () => {
- 
+  var data = new Date();
+
+  document.write('Hoje é: ' + data.toLocaleString());
+
+  data.setDate(data.getDate() - date2);
+
+  document.write('<br>14 dias atrás: ' + data.toLocaleString());
+  })
+ /* 
     let calculater = new Date(document.getElementById("calculater").value);
     let date2 = new Date(document.getElementById("date2").value);
   
@@ -21,21 +29,21 @@
       final.setDate(final.getDate() + date2);
       final.setDate(final.getDate() - calculater);
 
-        /* let  = date2.getDate() - calculater; */
+        /* let  = date2.getDate() - calculater; 
   
        var dd = ("0" + final.getDate()).slice(-2);
        var mm = ("0" + (final.getMonth() + 1)).slice(-2);
        var y = final.getFullYear();
 
        var dataformatada = y + '-' + mm + '-' + dd;
-      /* document.getElementById('date2' ,dataformatada);*/    
+       document.getElementById('date2' ,dataformatada);    
        output.innerHTML = `A diferença entra as datas é <span>${dataformatada}</span> dias`;
     }
-  
+   
     else {
       output.innerHTML = "Por favor escolha uma data valida";
     }
-  });}
+  });}*/
 
   
 /* let submit = document.getElementById("submit");
@@ -58,4 +66,4 @@ submit.addEventListener("click", () => {
   else {
     output.innerHTML = "Por favor escolha uma data valida";
        
-  */ 
+  */
