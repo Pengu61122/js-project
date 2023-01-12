@@ -9,9 +9,8 @@ function calculater() {
     var dia = partes[2];
 
     inicial = new Date(ano, mes, dia);
-    final = new Date(inicial);
-    final.setDate(final.getDate() + dias);
-    final.setDate(final.getDate() - 14); // menos 14 dias do resultado
+    milissegundos_por_dia = 1000 * 60 * 60 * 24;
+    final = new Date(inicial.getTime() - dias * milissegundos_por_dia);
 
     var dd = ("0" + final.getDate()).slice(-2);
     var mm = ("0" + (final.getMonth() + 1)).slice(-2);

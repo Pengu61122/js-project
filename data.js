@@ -16,7 +16,7 @@
   document.write('<br>14 dias atrás: ' + data.toLocaleString());
   })}
  /* 
-    let calculater = new Date(document.getElementById("calculater").value);
+    let Fulater = new Date(document.getElementById("calculater").value);
     let date2 = new Date(document.getElementById("date2").value);
   
     var partes = inicial.split("-");
