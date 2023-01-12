@@ -14,7 +14,7 @@
   data.setDate(data.getDate() - date2);
 
   document.write('<br>14 dias atrás: ' + data.toLocaleString());
-  })
+  })}
  /* 
     let calculater = new Date(document.getElementById("calculater").value);
     let date2 = new Date(document.getElementById("date2").value);
@@ -29,7 +29,7 @@
       final.setDate(final.getDate() + date2);
       final.setDate(final.getDate() - calculater);
 
-        /* let  = date2.getDate() - calculater; 
+         let  = date2.getDate() - calculater; 
   
        var dd = ("0" + final.getDate()).slice(-2);
        var mm = ("0" + (final.getMonth() + 1)).slice(-2);
@@ -43,10 +43,10 @@
     else {
       output.innerHTML = "Por favor escolha uma data valida";
     }
-  });}*/
+  });}
 
   
-/* let submit = document.getElementById("submit");
+ let submit = document.getElementById("submit");
 let output = document.getElementById("output");
 
 submit.addEventListener("click", () => {
@@ -66,4 +66,4 @@ submit.addEventListener("click", () => {
   else {
     output.innerHTML = "Por favor escolha uma data valida";
        
-  */
+  
